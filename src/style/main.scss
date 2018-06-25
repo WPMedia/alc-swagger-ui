@@ -1,5 +1,6 @@
 .swagger-ui
 {
+    padding-top: 20px;
     @import '~tachyons-sass/tachyons.scss';
     @import 'mixins';
     @import 'variables';
@@ -16,6 +17,7 @@
     @import 'information';
     @import 'authorize';
     @import 'errors';
+    @import 'sidebar';
     @include text_body();
     @import 'split-pane-mode';
 }

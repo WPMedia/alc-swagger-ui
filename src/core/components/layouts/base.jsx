@@ -27,7 +27,8 @@ export default class BaseLayout extends React.Component {
       getComponent,
       layoutSelectors,
       oas3Selectors,
-      oas3Actions
+      oas3Actions,
+      getConfigs
     } = this.props
 
     let info = specSelectors.info()
@@ -78,7 +79,7 @@ export default class BaseLayout extends React.Component {
     return (
 
       <div className='swagger-ui'>
-          <div>
+          <div style={{marginLeft: "270px"}}>
             <Errors/>
             <Row className="information-container">
               <Col mobile={12}>

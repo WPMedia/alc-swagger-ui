@@ -30,17 +30,13 @@
     display: flex;
     align-items: center;
 
-    padding: 10px 20px 10px 10px;
+    padding: 70px 20px 10px 10px;
 
     cursor: pointer;
     transition: all .2s;
 
     border-bottom: 1px solid rgba($opblock-tag-border-bottom-color, .3);
 
-    &:hover
-    {
-        background: rgba($opblock-tag-background-color-hover,.02);
-    }
 }
 
 @mixin method($color)
@@ -71,7 +67,7 @@
 {
     font-size: 24px;
 
-    margin: 0 0 5px 0;
+    margin: -60px 0 5px 0;
 
     @include text_headline();
 
@@ -628,7 +624,9 @@
 
 .scheme-container
 {
-    margin: 0 0 20px 0;
+    margin: 0 auto 20px auto;
+    width: 100%;
+    max-width: 1460px;
     padding: 30px 0;
 
     background: $scheme-container-background-color;

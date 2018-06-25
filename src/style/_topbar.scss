@@ -102,8 +102,10 @@
   letter-spacing: .03em;
   width: 100%;
   margin-bottom: 0px;
-  z-index: 2;
   border-radius: 0;
+  z-index: 100;
+  position: fixed;
+  top: 0;
 }
 
 .arc-navbar .arc-logo {

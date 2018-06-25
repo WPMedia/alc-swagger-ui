@@ -3,22 +3,13 @@ import { createDeepLinkPath, sanitizeUrl } from "core/utils"
 import Im from "immutable"
 import styled from 'styled-components';
 
-const SearchBarElement = styled.div`
-  display: ${props => !props.visible ? 'none': ''}
-`;
+const SearchBarElement = styled.div``;
 
 export default class Sidebar extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {showSearchBar: false}
     this.searchFunction= this.searchFunction.bind(this);
     this.resetSearch = this.resetSearch.bind(this);
-  }
-
-  componentDidMount() {
-    window.addEventListener('scroll', () => {
-      this.setState({showSearchBar: document.documentElement.scrollTop > 55})
-    })
   }
 
   searchFunction() {
@@ -41,6 +32,8 @@ export default class Sidebar extends React.Component {
     }
     else
       errorMsg.style.display = "none";
+
+    document.getElementById("adjustSidebar").scrollTop = 0;
   }
 
   resetSearch() {
@@ -80,11 +73,11 @@ export default class Sidebar extends React.Component {
 
     return (
       <nav id="scrollingNav">
-        <SearchBarElement visible={this.state.showSearchBar} className="sidenav-search">
+        <SearchBarElement className="sidenav-search">
           <input className="search" type="text" placeholder="Filter search..." onKeyUp={this.searchFunction} id="searchInput"></input>
           <span className="search-reset" onClick={this.resetSearch}>x</span>
         </SearchBarElement>
-        <div className="adjustSidebar">
+        <div className="adjustSidebar" id="adjustSidebar">
           <ul className="sidenav" id="sidenav">
             <div id="errorMsg"></div>
             {

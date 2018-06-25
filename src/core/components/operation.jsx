@@ -120,7 +120,8 @@ export default class Operation extends PureComponent {
     let onChangeKey = [ path, method ] // Used to add values to _this_ operation ( indexed by path and method )
 
     return (
-        <div className={deprecated ? "opblock opblock-deprecated" : isShown ? `opblock opblock-${method} is-open` : `opblock opblock-${method}`} id={isShownKey.join("-")} >
+        <div className="operationContainer" id={isShownKey.join("-")}>
+        <div className={deprecated ? "opblock opblock-deprecated" : isShown ? `opblock opblock-${method} is-open` : `opblock opblock-${method}`} >
           <div className={`opblock-summary opblock-summary-${method}`} onClick={toggleShown} >
             {/*TODO: convert this into a component, that can be wrapped
               and pulled in with getComponent */}
@@ -270,6 +271,7 @@ export default class Operation extends PureComponent {
               }
             </div>
           </Collapse>
+        </div>
         </div>
     )
   }

@@ -93,7 +93,8 @@ export default class Operation extends PureComponent {
     let produces = operation.get("produces")
     let parameters = getList(operation, ["parameters"])
     let operationScheme = specSelectors.operationScheme(path, method)
-    let isShownKey = ["operations", tag, operationId]
+    const summaryId = summary.split(' ').splice(0, 3).join('-')
+    let isShownKey = ["operations", tag, summaryId]
     let extensions = getExtensions(operation)
 
     const Responses = getComponent("responses")

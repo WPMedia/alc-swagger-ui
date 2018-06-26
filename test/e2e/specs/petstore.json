@@ -248,7 +248,7 @@
             ],
             "parameters":[
                {
-                  "name":"petId",
+                  "name":"petId-now",
                   "in":"path",
                   "description":"ID of pet to return",
                   "required":true,

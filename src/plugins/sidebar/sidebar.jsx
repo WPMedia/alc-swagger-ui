@@ -1,6 +1,5 @@
 import React from 'react'
-import { createDeepLinkPath, sanitizeUrl } from "core/utils"
-import Im from "immutable"
+import { createDeepLinkPath } from "core/utils"
 import styled from 'styled-components';
 
 const SearchBarElement = styled.div``;
@@ -92,8 +91,8 @@ export default class Sidebar extends React.Component {
                         const path = op.get("path")
                         const method = op.get("method")
                         const summary = op.getIn(["operation", "summary"])
-                        const operationId = op.getIn(["operation", "operationId"])
-                        let methodRef = ["operations", tag, operationId]
+                        const summaryId = summary.split(' ').splice(0, 3).join('-')
+                        let methodRef = ["operations", tag, summaryId]
                         return (
                           <div className="methods">
                           <li className="is-new"><a href={`#${methodRef.join("-")}`}>{summary}</a></li>

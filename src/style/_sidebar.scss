@@ -7,7 +7,7 @@ body {
     position: fixed;
     margin: 0;
     padding: 0;
-    top: 0;
+    top: 115px;
     left: 0;
     overflow-x: hidden;
     overflow-y: auto;
@@ -25,9 +25,9 @@ body {
 .sidenav {
     width: 250px;
     position: absolute;
-    margin: 30px 0;
-    padding: 20px 20px 0 20px;
-    top: 75px;
+    margin: 0 0 130px;
+    padding: 0 20px 0 20px;
+    top: 10px;
     left: 0;
     overflow-x: hidden;
     overflow-y: auto;
@@ -73,12 +73,12 @@ body {
     display: block;
     width: auto;
     margin: 0;
-    padding: 2px 11px;
+    padding: 5px 10px;
     border: 0;
     border-left: transparent 4px solid;
     border-right: transparent 4px solid;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 13.5px;
 }
 
 .sidenav .header .methods li > a:target {

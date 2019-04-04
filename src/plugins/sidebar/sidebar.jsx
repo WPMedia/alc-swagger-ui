@@ -91,7 +91,7 @@ export default class Sidebar extends React.Component {
                         const path = op.get("path")
                         const method = op.get("method")
                         const summary = op.getIn(["operation", "summary"])
-                        const summaryId = summary.split(' ').splice(0, 3).join('-')
+                        const summaryId = summary && summary.split(' ').splice(0, 3).join('-')
                         let methodRef = ["operations", tag, summaryId]
                         return (
                           <div className="methods">

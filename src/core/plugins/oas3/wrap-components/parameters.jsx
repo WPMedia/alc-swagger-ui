@@ -124,9 +124,6 @@ class Parameters extends Component {
               ) : null
             }
           </div>
-            { allowTryItOut ? (
-              <TryItOutButton enabled={ tryItOutEnabled } onCancelClick={ onCancelClick } onTryoutClick={ onTryoutClick } />
-            ) : null }
         </div>
         {this.state.parametersVisible ? <div className="parameters-container">
           { !parameters.count() ? <div className="opblock-description-wrapper"><p>No parameters</p></div> :

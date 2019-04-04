@@ -227,17 +227,6 @@ export default class Operation extends PureComponent {
               }
 
             <div className={(!tryItOutEnabled || !response || !allowTryItOut) ? "execute-wrapper" : "btn-group"}>
-              { !tryItOutEnabled || !allowTryItOut ? null :
-
-                  <Execute
-                    operation={ operation }
-                    specActions={ specActions }
-                    specSelectors={ specSelectors }
-                    path={ path }
-                    method={ method }
-                    onExecute={ onExecute } />
-              }
-
               { (!tryItOutEnabled || !response || !allowTryItOut) ? null :
                   <Clear
                     specActions={ specActions }

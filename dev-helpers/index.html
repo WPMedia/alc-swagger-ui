@@ -68,8 +68,10 @@
 
 <script src="./swagger-ui-bundle.js"> </script>
 <script src="./swagger-ui-standalone-preset.js"> </script>
+<link rel="stylesheet" href="https://nav-prod.home.static.arcpublishing.com/css/arcnav.css">
 <script>
   window.onload = function() {
+    window["nav"] = window["ArcNav"]
     window["SwaggerUIBundle"] = window["swagger-ui-bundle"]
     window["SwaggerUIStandalonePreset"] = window["swagger-ui-standalone-preset"]
     // Build a system
@@ -99,7 +101,6 @@
   }
 
 </script>
-<link rel="stylesheet" href="https://nav-prod.home.static.arcpublishing.com/css/arcnav.css">
 <script src="https://nav-prod.home.static.arcpublishing.com/js/arcnav.umd.js"></script>
 </body>
 

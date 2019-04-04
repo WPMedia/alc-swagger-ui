@@ -1,11 +1,10 @@
 import React from 'react'
 
-const { ArcNav } = window
-
 const Topbar = () => {
-  return ArcNav ? (
+  const { ArcNav } = window
+  return window.ArcNav ? (
     <ArcNav
-      appname='Arc'
+      appname='Arc Learning Center'
       homeLink='/alc'
       links={[
         {

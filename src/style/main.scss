@@ -26,9 +26,18 @@
     color: #4990e2;
 }
 
-.swagger-ui nav {
+.swagger-ui nav:not(#scrollingNav) {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 1000;
+}
+
+.swagger-ui nav:not(#scrollingNav) div > ul:first-of-type img {
+    margin-top: 12px;
+}
+
+.swagger-ui nav:not(#scrollingNav) input[type=search] {
+    padding: .5em .35em .5em 2.4em;
 }
 

@@ -21,8 +21,8 @@ For the older version of swagger-ui, refer to the [*2.x branch*](https://github.
     * swagger-ui.css.map
     * swagger-ui.js
     * swagger-ui.js.map
-- Log into WP-Arc AWS console and visit this url https://s3.console.aws.amazon.com/s3/buckets/arc-learning-center-static/docs/swagger/?region=us-east-1&tab=overview
-- Replace the files above in this S3 directory and make files public
+- Log into WP-Arc AWS console to access https://s3.console.aws.amazon.com/s3/buckets/arc-learning-center-static/docs/swagger/?region=us-east-1&tab=overview
+- Replace the files above in this S3 directory and make public
 
 #### Usage
 - [Installation](docs/usage/installation.md)
